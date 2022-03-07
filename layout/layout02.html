@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 02</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: inherit;
+            font-weight: normal;
+            color: inherit;
+        }
+        ul,ol {list-style: none;}
+        a{text-decoration: none; }
+        img{vertical-align: middle;}
+       
+        body{line-height: 1;}
+       
+        h1{font-size: 30px; text-align: center; margin-bottom: 100px;}
+
+        .sc01{
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .sc01 h2{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sc01>p{
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .sc01 .container{
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .sc01 .container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sc01 figure{
+            float: left;
+            width: 33.333333%;
+            padding: 0 15px;
+        }
+        .sc01 figure img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sc01 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+        .sc01 figure a {
+            display: block;
+            margin: 0 auto;
+            width: 160px;
+            height: 30px;
+            background: #333;
+            color: #FFF;
+            line-height: 30px;
+            border-radius: 10px;
+        }
+
+        .sc02{
+            padding: 100px 0;           
+            text-align: center;
+        }
+        .sc02 h2{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sc02>p{
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .sc02 .container{
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .sc02 .container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sc02 figure{
+            float: left;
+            width: 25%;
+            padding: 0 15px;
+        }
+        .sc02 figure img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sc02 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+        .sc02 figure a {
+            display: block;
+            margin: 0 auto;
+            width: 160px;
+            height: 30px;
+            background: #333;
+            color: #FFF;
+            line-height: 30px;
+            border-radius: 10px;
+        }
+        
+        
+        .sc03{
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .sc03 h2{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sc03>p{
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .sc03 .container{
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .sc03 .container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sc03 figure{
+            float: left;
+            width: 20%;
+            padding: 0 15px;
+        }
+        .sc03 figure img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sc03 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+        .sc03 figure a {
+            display: block;
+            margin: 0 auto;
+            width: 160px;
+            height: 30px;
+            background: #333;
+            color: #FFF;
+            line-height: 30px;
+            border-radius: 10px;
+        }
+        
+        .sc04{
+            padding: 100px 0;            
+            text-align: center;
+        }
+        .sc04 h2{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sc04>p{
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .sc04 .container{
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .sc04 .container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sc04 figure{
+            float: left;
+            width: 16.666666%;
+            padding: 0 15px;
+        }
+        .sc04 figure img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sc04 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+        .sc04 figure a {
+            display: block;
+            margin: 0 auto;
+            width: 160px;
+            height: 30px;
+            background: #333;
+            color: #FFF;
+            line-height: 30px;
+            border-radius: 10px;
+        }
+        
+        .sc05{
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .sc05 h2{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sc05>p{
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .sc05 .container{
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .sc05 .container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sc05 figure{
+            float: left;
+            width: 50%;
+            padding: 0 15px;
+        }
+        .sc05 figure img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sc05 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+        .sc05 figure a {
+            display: block;
+            margin: 0 auto;
+            width: 160px;
+            height: 30px;
+            background: #333;
+            color: #FFF;
+            line-height: 30px;
+            border-radius: 10px;
+        }
+      
+      
+      
+      
+
+
+    </style>
+</head>
+<body>
+    <h1>기본 레이아웃 02</h1>
+    <section class="sc01">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, atque.</p>
+        <div class="container">
+            <figure>
+                <img src="./img/menu_n01.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n02.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n03.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+        </div>
+    </section>
+    <section class="sc02">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, atque.</p>
+        <div class="container">
+            <figure>
+                <img src="./img/menu_n01.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n02.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n03.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n04.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+        </div>
+    </section>
+    <section class="sc03">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, atque.</p>
+        <div class="container">
+            <figure>
+                <img src="./img/menu_n01.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n02.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n03.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n04.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n05.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+        </div>
+    </section>
+    <section class="sc04">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, atque.</p>
+        <div class="container">
+            <figure>
+                <img src="./img/menu_n01.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n02.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n03.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n04.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n05.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n06.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+        </div>
+    </section>
+    <section class="sc05">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, atque.</p>
+        <div class="container">
+            <figure>
+                <img src="./img/menu_n01.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            <figure>
+                <img src="./img/menu_n02.jpg" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#!">more</a>
+            </figure>
+            
+        </div>
+    </section>
+</body>
+</html>

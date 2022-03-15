@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 .content figure {
-  /* 기준점 */
+  /* 가운데 위치시키는 기준점 */
   position: relative;
   flex: 1;
   padding: 0 15px;
@@ -142,7 +142,7 @@
 }
 /* 천천히 없어지게 하기 */
 .service .inner i {
-  transition: opacity 3s;
+  transition: opacity 2s;
 }
 
 /* 화살표 사라지게 하기 */

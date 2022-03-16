@@ -56,13 +56,22 @@
     color: #000;
     font-weight: 300;
     background: url(../img/토트넘\ 벽지.jpg) no-repeat fixed center center/cover;
-    /* 축약형 */
-    /* background-attachment: fixed; */
+    /* 축약형 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position-x: center;
+    background-position-y: center;
+    */
 }
 
 .bgFixed h2 {
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 500;
     letter-spacing: 3em;
     margin-bottom: 30px;
+}
+
+.bgFixed p {
+    font-weight: 300;
+    line-height: 1.618em;
 }

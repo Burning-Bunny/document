@@ -1,0 +1,68 @@
+.allWrap i {
+    position: absolute;
+    right: 10%;
+}
+
+.headerWrap {
+    display: none;
+    background: #00f;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.headerWrap .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tabMenu {
+    padding: 100px 0;
+    background: #f2f2f2;
+}
+
+.tabMenu .container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.tabMenu .tabLink {
+    display: flex;
+}
+
+.tabMenu .tabLink li {
+    flex: 1;
+}
+
+.tabMenu .container .tabLink li.active {
+    color: #f00;
+}
+
+.tabMenu .tabContent {
+    position: absolute;
+}
+
+.tabMenu .tabContent>div {
+    display: none;
+}
+
+.tabMenu .tabContent>div.active {
+    display: block;
+}
+
+/* 배경 픽스 parallex scrolling*/
+.bgFixed {
+    padding: 200px 0;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+    background: url(../img/토트넘\ 벽지.jpg) no-repeat fixed center center/cover;
+    /* 축약형 */
+    /* background-attachment: fixed; */
+}
+
+.bgFixed h2 {
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 3em;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,241 @@
+.allWrap {}
+
+
+/* topBanner */
+.topBanner {
+    padding: 24px 0;
+    /* 섹션을 가를 때 연한 회색 배경을 준다  */
+    background: #f3f3f3;
+}
+
+.topBanner .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+.topBanner .container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    /* Noto Sans 폰트 100 300 400 500 700 900 */
+    font-weight: 100;
+    /* 자간 */
+    letter-spacing: 0.040em;
+    /* 줄 간격 늘리기 */
+}
+
+.topBanner .container p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+
+}
+
+.topBanner .container a {
+    display: inline-block;
+    height: 16px;
+    line-height: 14px;
+    margin-left: 20px;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: 300;
+    /* 사이즈 웨이트 컬러 축약형 */
+    border: 1px solid #333;
+    /* 대문자로 변경 */
+    text-transform: uppercase;
+}
+
+.topBanner .container i {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*  header : GIL 2022.03.17 최종수정  */
+.headerWrap {}
+
+.headerWrap .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+.headerWrap .container>* {
+    padding: 0 15px;
+}
+
+.headerWrap .searchForm {
+    margin-left: auto;
+}
+
+.gnb {}
+
+.gnb>ul {
+    display: flex;
+}
+
+.gnb>ul>li {
+    position: relative;
+    padding: 0 20px;
+}
+
+
+.gnb>ul>li~li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 2px;
+    height: 13px;
+    background: #333;
+}
+
+/* .gnb>ul>li:nth-child(1)::after{
+    display: none;
+}  */
+
+/* attributer 선택자 */
+.headerWrap .searchForm input[type="search"] {
+    padding: 2px 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+/* placeholder 선택하는법 */
+.headerWrap .searchForm input[type="search"]::placeholder {
+    font-size: 10px;
+    color: #00f
+}
+
+/* placeholder 에 포커스 되었을때 효과 */
+.headerWrap .searchForm input[type="search"]:focus::placeholder {
+    color: transparent;
+}
+
+.headerWrap .searchForm button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.headerWrap .searchForm button i {
+    font-size: 15px;
+    color: #fff;
+    background: #333;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.mainVisual .visualSlide {
+    border-top: 1px solid #ddd;
+}
+
+.mainVisual .visualSlide figure {
+    height: 600px;
+}
+
+.mainVisual .visualSlide figure .inner {
+    width: 1200px;
+    margin: 300px auto 0 auto;
+    padding: 0 15px;
+    color: #fff
+}
+
+.mainVisual .visualSlide figure .inner h3 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s 0.5s;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-shadow: 0 0 2px #333;
+}
+
+.mainVisual .visualSlide figure.slick-active .inner h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mainVisual .visualSlide figure .inner p {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s 1s;
+    font-size: 15px;
+    font-weight: 300;
+    text-shadow: 0 0 2px #333;
+}
+
+.mainVisual .visualSlide figure.slick-active .inner p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.mainVisual .visualSlide figure.slick-active {
+
+    color: #fff;
+    transition: 2s;
+}
+
+.mainVisual .visualSlide .itm01 {
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visualSlide .itm02 {
+    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visualSlide .itm03 {
+    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+
+}
+
+.mainVisual .visualSlide .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 10px;
+}
+
+.mainVisual .visualSlide .slick-dots li {
+    width: 100px;
+    height: 5px;
+    background: #333;
+    transition: 0.5s;
+}
+
+.mainVisual .visualSlide .slick-dots li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background: #f00;
+    transition: 3s;
+}
+
+.mainVisual .visualSlide .slick-dots li.slick-active::after {
+    width: 100%;
+}
+
+.mainVisual .visualSlide .slick-dots li.slick-active {
+    background: #fff;
+}
+
+.mainVisual .visualSlide .slick-dots button {
+    display: none;
+}

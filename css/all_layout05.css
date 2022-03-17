@@ -1,0 +1,124 @@
+.headerWrap .inner {
+    background: #00f;
+}
+
+.headerWrap .container {
+    display: none;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.headerWrap .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topBannerToggle {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topBannerToggle .inner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+    background: #00f;
+    color: #fff;
+    padding: 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.topBannerToggle .inner::after {
+    content: "OPEN";
+}
+
+.topBannerToggle .inner.active::after {
+    content: "CLOSE";
+}
+
+.topBannerToggle .inner i {
+    padding: 3px;
+    background: #333;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.topBannerToggle .inner.active i {
+    transform: rotate(180deg);
+}
+
+.tabMenu {
+    padding: 100px 0;
+    background: #f2f2f2;
+}
+
+.tabMenu .container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.tabMenu .tabLink {
+    display: flex;
+}
+
+.tabMenu .tabLink li {
+    flex: 1;
+    line-height: 50px;
+    border-bottom: 1px solid#333;
+    transform: translateY(1px);
+    text-align: center;
+}
+
+.tabMenu .tabLink li.active {
+    border-top: 1px solid #333;
+    border-left: 1px solid#333;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid#333;
+    background: transparent;
+    color: #00f;
+}
+
+.tabMenu .container .tabLink li.active {
+    color: #00f;
+}
+
+.tabMenu .tabContent {
+    position: absolute;
+}
+
+.tabMenu .tabContent>div {
+    display: none;
+}
+
+.tabMenu .tabContent>div.active {
+    display: block;
+}
+
+/* 배경 픽스 parallex scrolling*/
+.bgFixed {
+    padding: 200px 0;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+    background: url(../img/토트넘\ 벽지.jpg) no-repeat fixed center center/cover;
+    /* 축약형 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position-x: center;
+    background-position-y: center;
+    */
+}
+
+.bgFixed h2 {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 3em;
+    margin-bottom: 30px;
+}
+
+.bgFixed p {
+    font-weight: 300;
+    line-height: 1.618em;
+}

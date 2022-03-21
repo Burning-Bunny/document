@@ -1,97 +1,89 @@
 /* topBanner */
 .topBanner {
-    padding: 24px 0;
-    /* 섹션을 가를 때 연한 회색 배경을 준다  */
-    background: #f3f3f3;
+  padding: 24px 0;
+  /* 섹션을 가를 때 연한 회색 배경을 준다  */
+  background: #f3f3f3;
 }
 
 .topBanner .container {
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .topBanner .container h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    /* Noto Sans 폰트 100 300 400 500 700 900 */
-    font-weight: 100;
-    /* 자간 */
-    letter-spacing: 0.040em;
-    /* 줄 간격 늘리기 */
+  /* 줄 간격 늘리기 */
+  margin-bottom: 10px;
+  font-size: 24px;
+  /* Noto Sans 폰트 100 300 400 500 700 900 */
+  font-weight: 100;
+  /* 자간 */
+  letter-spacing: 0.04em;
 }
 
 .topBanner .container p {
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 0.025em;
-
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
 }
 
 .topBanner .container a {
-    margin-left: 20px;
-    padding: 3px 20px;
-    font-size: 12px;
-    font-weight: 300;
-    /* 사이즈 웨이트 컬러 축약형 */
-    border: 1px solid #333;
-    /* 대문자로 변경 */
-    text-transform: uppercase;
+  margin-left: 20px;
+  padding: 3px 20px;
+  font-size: 12px;
+  font-weight: 300;
+  /* 사이즈 웨이트 컬러 축약형 */
+  border: 1px solid #333;
+  /* 대문자로 변경 */
+  text-transform: uppercase;
 }
 
 .topBanner .container i {
-    position: absolute;
-    top: 0;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
 }
-
-
-
-
 
 /*  header : GIL 2022.03.17 최종수정  */
 
-
 .headerWrap .container {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    line-height: 100px;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 100px;
 }
 
-.headerWrap .container>* {
-    padding: 0 15px;
+.headerWrap .container > * {
+  padding: 0 15px;
 }
 
 .headerWrap .searchForm {
-    margin-left: auto;
+  margin-left: auto;
 }
 
-
-.gnb>ul {
-    display: flex;
+.gnb > ul {
+  display: flex;
 }
 
-.gnb>ul>li {
-    position: relative;
-    padding: 0 20px;
+.gnb > ul > li {
+  position: relative;
+  padding: 0 20px;
 }
 
-
-.gnb>ul>li~li::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    display: block;
-    width: 2px;
-    height: 13px;
-    background: #333;
+.gnb > ul > li ~ li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  width: 2px;
+  height: 13px;
+  background: #333;
 }
 
 /* .gnb>ul>li:nth-child(1)::after{
@@ -100,473 +92,610 @@
 
 /* attributer 선택자 */
 .headerWrap .searchForm input[type="search"] {
-    padding: 2px 0;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #333;
+  padding: 2px 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
 }
 
 /* placeholder 선택하는법 */
 .headerWrap .searchForm input[type="search"]::placeholder {
-    font-size: 10px;
-    color: #00f
+  font-size: 10px;
+  color: #00f;
 }
 
 /* placeholder 에 포커스 되었을때 효과 */
 .headerWrap .searchForm input[type="search"]:focus::placeholder {
-    color: transparent;
+  color: transparent;
 }
 
 .headerWrap .searchForm button {
-    outline: none;
-    border: none;
-    background: transparent;
+  outline: none;
+  border: none;
+  background: transparent;
 }
 
 .headerWrap .searchForm button i {
-    font-size: 15px;
-    color: #fff;
-    background: #333;
-    padding: 5px;
-    border-radius: 50%;
+  font-size: 15px;
+  color: #fff;
+  background: #333;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 .mainVisual .visualSlide {
-    border-top: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 
 .mainVisual .visualSlide figure {
-    position: relative;
-    height: 600px;
+  position: relative;
+  height: 600px;
 }
 
 /* 애니메이션 실험 */
 .mainVisual .visualSlide figure i {
-    position: absolute;
-    top: 100px;
-    right: 50%;
+  position: absolute;
+  top: 100px;
+  right: 50%;
 
-    font-size: 100px;
-    color: #f00;
+  font-size: 100px;
+  color: #f00;
 
-    opacity: 0;
-    transition: 0.5s;
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .mainVisual .visualSlide figure.oo i {
-    opacity: 1;
-    /* 만든 애니메이션 적용 */
-    animation: heart 1s infinite;
+  opacity: 1;
+  /* 만든 애니메이션 적용 */
+  animation: heart 1s infinite;
 }
 
 /* 애니메이션을 만들어 주는 방법 */
 @keyframes heart {
-    0% {
-        transform: scale(1) translateY(0);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    20% {
-        transform: scale(0.5) translateY(25px);
-    }
+  20% {
+    transform: scale(0.5);
+  }
 
-    50% {
-        transform: scale(1) translateY(50px);
-    }
+  50% {
+    transform: scale(1);
+  }
 
-    70% {
-        transform: scale(0.5) translateY(25px);
-    }
+  70% {
+    transform: scale(0.5);
+  }
 
-    100% {
-        transform: scale(1) translateY(0);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* css로 slick 버튼 디자인 */
 .mainVisual .visualSlide .msLeft {
-    position: absolute;
-    top: 50%;
-    left: 200px;
+  position: absolute;
+  top: 50%;
+  left: 200px;
 
-    z-index: 999;
-    border-top: 100px solid #fff;
-    border-right: 100px solid transparent;
-    transform: translateY(-50%) rotate(-45deg);
-
+  z-index: 999;
+  border-top: 100px solid #fff;
+  border-right: 100px solid transparent;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .mainVisual .visualSlide .msLeft.oo {
-    border-top: 100px solid #333;
+  border-top: 100px solid #333;
 }
 
 .mainVisual .visualSlide .msRight {
-    position: absolute;
-    top: 50%;
-    right: 200px;
+  position: absolute;
+  top: 50%;
+  right: 200px;
 
-    border-top: 100px solid #fff;
-    border-left: 100px solid transparent;
-    transform: translateY(-50%) rotate(45deg);
+  border-top: 100px solid #fff;
+  border-left: 100px solid transparent;
+  transform: translateY(-50%) rotate(45deg);
 }
 
-
 .mainVisual .visualSlide figure .inner {
-    width: 1200px;
-    margin: 300px auto 0 auto;
-    padding: 0 15px;
-    color: #fff
+  width: 1200px;
+  margin: 300px auto 0 auto;
+  padding: 0 15px;
+  color: #fff;
 }
 
 .mainVisual .visualSlide figure.itm02 .inner {
-    color: #333;
+  color: #333;
 }
 
 .mainVisual .visualSlide figure .inner h3 {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: 1s 0.5s;
-    font-size: 60px;
-    font-weight: 900;
-    margin-bottom: 30px;
-    text-shadow: 0 0 2px #333;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s 0.5s;
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-shadow: 0 0 2px #333;
 }
 
 .mainVisual .visualSlide figure.slick-active .inner h3 {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .mainVisual .visualSlide figure .inner p {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: 1s 1s;
-    font-size: 15px;
-    font-weight: 300;
-    text-shadow: 0 0 2px #333;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s 1s;
+  font-size: 15px;
+  font-weight: 300;
+  text-shadow: 0 0 2px #333;
 }
 
 .mainVisual .visualSlide figure.slick-active .inner p {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-
 .mainVisual .visualSlide figure.slick-active {
-
-    color: #fff;
-    transition: 2s;
+  color: #fff;
+  transition: 2s;
 }
 
 .mainVisual .visualSlide .itm01 {
-    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+  background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .itm02 {
-    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+  background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .itm03 {
-    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
-
+  background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .slick-dots {
-    position: absolute;
-    left: 50%;
-    bottom: 60px;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
 
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .mainVisual .visualSlide .slick-dots li {
-    width: 100px;
-    height: 5px;
-    background: #333;
-    transition: 0.5s;
+  width: 100px;
+  height: 5px;
+  background: #333;
+  transition: 0.5s;
 }
 
 .mainVisual .visualSlide .slick-dots li::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-    background: #f00;
-    transition: 3s;
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background: #f00;
+  transition: 3s;
 }
 
 .mainVisual .visualSlide .slick-dots li.slick-active::after {
-    width: 100%;
+  width: 100%;
 }
 
 .mainVisual .visualSlide .slick-dots li.slick-active {
-    background: #fff;
+  background: #fff;
 }
 
 .mainVisual .visualSlide .slick-dots button {
-    display: none;
+  display: none;
 }
 
 .mainProduct {
-    padding: 100px 0;
-    text-align: center;
+  padding: 100px 0;
+  text-align: center;
 }
 
 .mainProduct h2 {
-    font-size: 19px;
-    font-weight: 100;
-    letter-spacing: 0.20em;
-    margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
 }
 
 .mainProduct p {
-    font-size: 15px;
-    font-weight: 100;
-    letter-spacing: -0.025em;
-    margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
 }
 
-
 .mainProduct .container {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .mainProduct .container figure {
-    position: relative;
-    flex: 1;
-    /* 사이를 벌려주는 것 */
-    padding: 0 15px;
+  position: relative;
+  flex: 1;
+  /* 사이를 벌려주는 것 */
+  padding: 0 15px;
 }
 
 .mainProduct .container figure .inner {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .mainProduct .container figure strong {
-    /* 꽉 채워서 inline 이 옆에 올 수 없다. */
-    display: block;
-    margin-bottom: 10px;
+  /* 꽉 채워서 inline 이 옆에 올 수 없다. */
+  display: block;
+  margin-bottom: 10px;
 }
 
 .mainProduct .container figure a {
-    display: inline-block;
-    padding: 10px 30px;
-    background: #333;
-    color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  background: #333;
+  color: #fff;
 }
 
 .mainProduct .container figure a:hover {
-    background: #ddd;
-    color: #333;
+  background: #ddd;
+  color: #333;
 }
 
 /* 박스 넘치는 것을 없애서 박스안에 가둬 둔다. */
 .mainProduct .container figure .inner {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .mainProduct .container figure .inner img {
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .mainProduct .container figure .inner:hover img {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .mainProduct .container figure .label {
-    position: absolute;
-    top: -10px;
-    right: 0;
-    border-top: 10px solid #f00;
-    border-left: 50px solid #f00;
-    border-bottom: 10px solid #f00;
-    border-right: 10px solid transparent;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  border-top: 10px solid #f00;
+  border-left: 50px solid #f00;
+  border-bottom: 10px solid #f00;
+  border-right: 10px solid transparent;
 }
 
 .mainProduct .container figure .label span {
-    position: absolute;
-    top: -8px;
-    left: -40px;
-    color: #fff;
-    font-size: 14px;
+  position: absolute;
+  top: -8px;
+  left: -40px;
+  color: #fff;
+  font-size: 14px;
 }
 
 .eventBanner {
-    padding: 100px 0;
-    background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
-    text-align: center;
-    color: #fff;
-    /* 이미지 색깔 뺴기 */
-    filter: grayscale(1);
+  padding: 100px 0;
+  background: url(../images/mainvisual03.jpg) no-repeat fixed center
+    center/cover;
+  text-align: center;
+  color: #fff;
+  /* 이미지 색깔 뺴기 */
+  filter: grayscale(1);
 }
 
 .eventBanner h2 {
-    font-size: 19px;
-    font-weight: 100;
-    letter-spacing: 0.20em;
-    margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
 }
 
 .eventBanner p {
-    font-size: 15px;
-    font-weight: 100;
-    letter-spacing: -0.025em;
-    margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
 }
 
 .eventBanner i {
-    padding: 5px;
-    background: #333;
-    border-radius: 50%;
-    margin-left: 15px;
+  padding: 5px;
+  background: #333;
+  border-radius: 50%;
+  margin-left: 15px;
 }
 
 .eventProduct {
-    padding: 100px 0;
-
+  padding: 100px 0;
 }
 
 .eventProduct .container {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.eventProduct .container>div {
-    padding: 0 15px;
+.eventProduct .container > div {
+  padding: 0 15px;
 }
 
 .eventProduct .left {
-    width: 40%;
+  width: 40%;
 }
 
 .eventProduct .eProductSlide {
-    padding: 5px;
-    border: 10px solid #ddd;
-    padding: 5px;
+  padding: 5px;
+  border: 10px solid #ddd;
+  padding: 5px;
 }
 
 .eventProduct .right {
-    display: flex;
-    align-items: center;
-    width: 60%;
+  display: flex;
+  align-items: center;
+  width: 60%;
 }
 
 .eventProduct h3 {
-    font-size: 19px;
-    font-weight: 100;
-    letter-spacing: 0.20em;
-    margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
 }
 
 .eventProduct p {
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: -0.025em;
-    margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
 }
 
 .eventProduct i {
-    padding: 13px;
-    background: #333;
-    color: #fff;
-    border-radius: 7px;
-    margin-left: 0 5px;
+  padding: 13px;
+  background: #333;
+  color: #fff;
+  border-radius: 7px;
+  margin-left: 0 5px;
 }
 
 .allProduct {
-    position: relative;
-    padding: 100px 0;
-    text-align: center;
-    background: #f2f2f2;
+  position: relative;
+  padding: 100px 0;
+  text-align: center;
+  background: #f2f2f2;
 }
 
 .allProduct h2 {
-    font-size: 19px;
-    font-weight: 100;
-    letter-spacing: 0.20em;
-    margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
 }
 
 .allProduct p {
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: -0.025em;
-    margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
 }
 
 .allProduct .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .allProduct .aproductSlide figure {
-    padding: 30px 15px;
+  padding: 30px 15px;
 }
 
 .allProduct .aproductSlide figure.slick-center {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-
 .allProduct .inner {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* +는 인접형제 선택자 */
-.allProduct .inner+strong {
-    display: block;
-    margin-bottom: 20px;
+.allProduct .inner + strong {
+  display: block;
+  margin-bottom: 20px;
 
-    font-size: 13px;
-    font-weight: 300;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .allProduct .slick-dots {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 /* 도트 만들기 */
 .allProduct .slick-dots li {
-    width: 13px;
-    height: 13px;
-    background: #333;
-    border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  background: #333;
+  border-radius: 50%;
 }
 
 .allProduct .slick-dots li button {
-    display: none;
+  display: none;
 }
 
 .allProduct .slick-dots li.slick-active {
-    background: #f00;
-    transition: 1s;
+  background: #f00;
+  transition: 1s;
 }
 
 /* 아이콘 가운데로 */
 .allProduct i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    font-size: 30px;
-    color: #fff;
-    background: #333;
-    border-radius: 50%;
-    padding: 10px;
+  font-size: 30px;
+  color: #fff;
+  background: #333;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .allProduct i:first-child {
-    margin-left: -700px;
+  margin-left: -700px;
 }
 
 .allProduct i:last-child {
-    margin-left: 700px;
+  margin-left: 700px;
 }
+
+/* 2022.03.21 영상 배경화면 깔기 */
+.movieBg {
+  padding: 300px 0;
+  color: #fff;
+  text-align: center;
+  /* filter: grayscale(1); */
+}
+
+.movieBg h2 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+  text-shadow: 0 0 2px #333;
+}
+
+.movieBg p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+  text-shadow: 0 0 2px #333;
+}
+
+.movieBg i {
+  font-size: 20px;
+  padding: 10px;
+  background: #333;
+  border-radius: 50%;
+  margin: 0 15px;
+  padding: 15px;
+}
+/* 2022.03.21 탭 메뉴 만들기 */
+.customerArea {
+  /* 위아래 공간 같게 하기 */
+  padding: 100px 0;
+  /* 백그라운드는 강약을 준다. */
+  background: #f2f2f2;
+}
+
+.customerArea .container {
+  position: relative;
+  display: flex;
+  /*라인 맞추기  */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.customerArea .container > div {
+  position: relative;
+  flex: 1;
+  padding: 0 15px;
+}
+/* 2022.03.21.14:00 이미지에 버튼 만들기 */
+.customerArea .container > div .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #9acd32;
+  border: 3px solid #9acd32;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.5s;
+}
+.customerArea .container > div .btn:hover {
+  background: #fff;
+  color: #9acd32;
+  border: 3px solid #9acd32;
+  border-radius: 20px;
+}
+.customerArea .container > div img {
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.customerArea .container > div img:hover {
+  filter: grayscale(0);
+}
+
+.customerArea .tabMenu {
+  display: flex;
+}
+.customerArea .tabMenu > li {
+  flex: 1;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+.customerArea .tabMenu > li.oo {
+  background: #369;
+}
+/* 나를 뺀 형제들 선택 li~li */
+.customerArea .tabMenu > li ~ li {
+  border-left: 1px solid #fff;
+}
+
+.customerArea .tapContent > div {
+  display: none;
+}
+
+.customerArea .tapContent > div.oo {
+  display: block;
+}
+/* 텍스트를 좌우 사이드 배치00000000000 */
+.customerArea .tapContent a {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 3px;
+  border-bottom: 1px solid #ddd;
+}
+/* 텍스트가 길때 말줄임표 표시하는 방법 */
+.customerArea .tapContent strong {
+  display: block;
+  width: 400px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.customerArea .container i {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 35px;
+  z-index: 999;
+  color: #f00;
+  opacity: 0;
+  transition: s;
+  animation: heart 1s infinite;
+}
+
+.customerArea .container > div:hover + i {
+  opacity: 1;
+}
+
+.footerWrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+/* 반응형 웹에 쓸일 많은 9/16 = 0.5625 외워두면 좋음 */

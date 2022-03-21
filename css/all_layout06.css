@@ -561,7 +561,7 @@
   padding: 300px 0;
   color: #fff;
   text-align: center;
-  /* filter: grayscale(1); */
+  filter: grayscale(1);
 }
 
 .movieBg h2 {
@@ -661,7 +661,7 @@
 .customerArea .tapContent > div.oo {
   display: block;
 }
-/* 텍스트를 좌우 사이드 배치00000000000 */
+/* 텍스트를 좌우 사이드 배치 */
 .customerArea .tapContent a {
   display: flex;
   justify-content: space-between;
@@ -685,7 +685,7 @@
   z-index: 999;
   color: #f00;
   opacity: 0;
-  transition: s;
+  transition: 0.5s;
   animation: heart 1s infinite;
 }
 

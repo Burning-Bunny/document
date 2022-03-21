@@ -84,13 +84,13 @@ $(function () {
   $(".movieBg i:first-child").on("click", function () {
     $("#bgndVideo").YTPPause();
   });
-  $(".movieBg i:last-child").on("click", function () {
+  $(".movieBg i:nth-child(2)").on("click", function () {
     $("#bgndVideo").YTPPlay();
   });
   //풀스크린
-  //   $('.movieBg i:last-child').on('click',function(){
-  //       $('#bgndVideo').YTPFullscreen();
-  //   })
+  $(".movieBg i:last-child").on("click", function () {
+    $("#bgndVideo").YTPFullscreen();
+  });
 
   //2022.03.21 탭 메뉴 만들기
   // $(this) 내가 선택한 이것... $(this).index()

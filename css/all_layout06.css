@@ -2,7 +2,7 @@
 .topBanner {
   padding: 24px 0;
   /* 섹션을 가를 때 연한 회색 배경을 준다  */
-  background: #f3f3f3;
+  background: #fff;
 }
 
 .topBanner .container {
@@ -48,6 +48,9 @@
   cursor: pointer;
 }
 
+.headerWrap {
+  background: #96f;
+}
 /*  header : GIL 2022.03.17 최종수정  */
 
 .headerWrap .container {
@@ -101,7 +104,7 @@
 /* placeholder 선택하는법 */
 .headerWrap .searchForm input[type="search"]::placeholder {
   font-size: 10px;
-  color: #00f;
+  color: #96f;
 }
 
 /* placeholder 에 포커스 되었을때 효과 */
@@ -129,7 +132,8 @@
 
 .mainVisual .visualSlide figure {
   position: relative;
-  height: 600px;
+  height: 700px;
+  overflow: hidden;
 }
 
 /* 애니메이션 실험 */
@@ -200,6 +204,10 @@
   transform: translateY(-50%) rotate(45deg);
 }
 
+.mainVisual .visualSlide .msRight.oo {
+  border-top: 100px solid #333;
+}
+
 .mainVisual .visualSlide figure .inner {
   width: 1200px;
   margin: 300px auto 0 auto;
@@ -246,15 +254,15 @@
 }
 
 .mainVisual .visualSlide .itm01 {
-  background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+  background: url(../img/change/taeyeon_slide_03.png) no-repeat top center/cover;
 }
 
 .mainVisual .visualSlide .itm02 {
-  background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+  background: url(../img/change/taeyeon_slide_04.png) no-repeat top center/cover;
 }
 
 .mainVisual .visualSlide .itm03 {
-  background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+  background: url(../img/change/taeyeon_slide_05.png) no-repeat top center/cover;
 }
 
 .mainVisual .visualSlide .slick-dots {
@@ -382,10 +390,10 @@
 
 .eventBanner {
   padding: 100px 0;
-  background: url(../images/mainvisual03.jpg) no-repeat fixed center
+  background: url(../img/change/taeyeon_slide_04.png) no-repeat fixed top
     center/cover;
   text-align: center;
-  color: #fff;
+  color: #000;
   /* 이미지 색깔 뺴기 */
   filter: grayscale(1);
 }
@@ -406,13 +414,14 @@
 
 .eventBanner i {
   padding: 5px;
-  background: #333;
+  background: #fff;
   border-radius: 50%;
   margin-left: 15px;
 }
 
 .eventProduct {
   padding: 100px 0;
+  background: #fcf;
 }
 
 .eventProduct .container {
@@ -467,7 +476,7 @@
   position: relative;
   padding: 100px 0;
   text-align: center;
-  background: #f2f2f2;
+  background: #fff;
 }
 
 .allProduct h2 {
@@ -615,17 +624,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #9acd32;
-  border: 3px solid #9acd32;
+  background: #fcf;
+  border: 3px solid #fcf;
   padding: 15px 30px;
   border-radius: 10px;
-  color: #fff;
+  color: #333;
   transition: 0.5s;
 }
 .customerArea .container > div .btn:hover {
-  background: #fff;
-  color: #9acd32;
-  border: 3px solid #9acd32;
+  background: #333;
+  color: #fcf;
+  border: 3px solid #fcf;
   border-radius: 20px;
 }
 .customerArea .container > div img {
@@ -647,7 +656,7 @@
   text-align: center;
 }
 .customerArea .tabMenu > li.oo {
-  background: #369;
+  background: #fcf;
 }
 /* 나를 뺀 형제들 선택 li~li */
 .customerArea .tabMenu > li ~ li {
@@ -693,9 +702,94 @@
   opacity: 1;
 }
 
+/* 반응형 웹에 쓸일 많은 비율 9/16 = 0.5625 외워두면 좋음 */
+
+/*  2022.03.22  footer 만들기 */
+
 .footerWrap {
+  background: #fcf;
+  color: #333;
+  line-height: 60px;
+}
+.footerWrap .top {
+  /* 흰색이 검은 배경에서는 폰트가 더 두꺼워 보인다.- #fff에서 회색으로 색 밝가를 낮춘다  */
+  border-bottom: 1px solid #666;
+}
+
+.footerWrap .container {
+  display: flex;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  padding: 100px 15px;
 }
-/* 반응형 웹에 쓸일 많은 9/16 = 0.5625 외워두면 좋음 */
+
+.footerWrap .container > dl {
+  display: flex;
+  padding: 0 15px;
+  /* 패딩은 양쪽으로 벌리는 반면에 갭은 글자 사이만 띄워줌 */
+  gap: 50px;
+}
+.footerWrap .container dd {
+  position: relative;
+}
+
+.footerWrap .container dd::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -20px;
+
+  display: block;
+  width: 1px;
+  height: 13px;
+  background: #333;
+  transform: translateY(-50%);
+}
+
+.footerWrap .container > div {
+  padding: 0 15px;
+  font-size: 20px;
+}
+.footerWrap .bottom {
+  padding-bottom: 50px;
+}
+
+.footerWrap .container > * {
+  padding: 0 15px;
+}
+
+.footerWrap .link select {
+  background: #f2f2f2;
+  font-size: 15px;
+  padding: 2px 10px;
+  outline: none;
+  border: none;
+  border: 2px solid #333;
+}
+
+.popup01 {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #f2f2f2;
+  padding: 30px;
+  background: rgba(255, 204, 255, 0.5);
+}
+
+.popup01 img {
+  width: 400px;
+}
+.popup01 button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #fff;
+  background: #96f;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}

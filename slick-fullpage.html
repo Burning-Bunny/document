@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <style>
+      .slick_mom {
+        height: 100vh;
+      }
+
+      .slick_itm {
+        height: 100vh !important;
+        text-align: center;
+        font-size: 200px;
+      }
+
+      .slick_itm:nth-child(even) {
+        background: #333;
+        color: #fff;
+      }
+      .slick_itm > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="slick_fullpage">
+      <div class="slick_mom">
+        <div class="slick_itm slick_item01">
+          <div>A</div>
+        </div>
+        <div class="slick_itm slick_item02"><div>B</div></div>
+        <div class="slick_itm slick_item03"><div>C</div></div>
+        <div class="slick_itm slick_item04"><div>D</div></div>
+        <div class="slick_itm slick_item05"><div>E</div></div>
+      </div>
+    </section>
+  </body>
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script>
+    $(function () {
+      $(".slick_mom").slick({
+        arrows: false,
+        vertical: true,
+      });
+
+      $(window).on("wheel", function (e) {
+        let wd = e.originalEvent.wheelDelta;
+        if (wd < 0) {
+          $(".slick_mom").slick("slickNext");
+        } else {
+          $(".slick_mom").slick("slickPrev");
+        }
+      });
+    });
+  </script>
+</html>

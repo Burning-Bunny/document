@@ -30,9 +30,9 @@ $(function () {
       .siblings()
       .removeClass("oo");
     if (currentSlide === 1) {
-      $(".msLeft").addClass("oo");
+      $(".msLeft,.msRight").addClass("oo");
     } else {
-      $(".msLeft").removeClass("oo");
+      $(".msLeft,.msRight").removeClass("oo");
     }
   });
 
@@ -112,6 +112,22 @@ $(function () {
       .removeClass("oo");
   });
   //2022.03.21 pm14:00탭 메뉴 만들기
+
+  //2022.03.22 select  폼태그에 link 적용 하는 방법
+  $("#link").on("change", function () {
+    let linkSite = $(this).val();
+    if (!linkSite) return;
+    window.open(linkSite);
+  });
+
+  //만들어진 함수를 가져다 쓸때 () 로 함수를 쓴다..
+  //cost jquery={
+  //  parent(){}
+  //}
+
+  $(".popup01 button").on("click", function () {
+    $(this).parent().hide();
+  });
 
   ////////////////////////////////////////
 });

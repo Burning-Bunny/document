@@ -2,7 +2,8 @@
 .topBanner {
   padding: 24px 0;
   /* 섹션을 가를 때 연한 회색 배경을 준다  */
-  background: #fff;
+
+  color: #000;
 }
 
 .topBanner .container {
@@ -35,7 +36,7 @@
   font-size: 12px;
   font-weight: 300;
   /* 사이즈 웨이트 컬러 축약형 */
-  border: 1px solid #333;
+  border: 1px solid #999;
   /* 대문자로 변경 */
   text-transform: uppercase;
 }
@@ -75,6 +76,7 @@
 .gnb > ul > li {
   position: relative;
   padding: 0 20px;
+  color: #ddd;
 }
 
 .gnb > ul > li ~ li::after {
@@ -86,7 +88,7 @@
   display: block;
   width: 2px;
   height: 13px;
-  background: #333;
+  background: #ddd;
 }
 
 /* .gnb>ul>li:nth-child(1)::after{
@@ -98,7 +100,7 @@
   padding: 2px 0;
   outline: none;
   border: none;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #fcf;
 }
 
 /* placeholder 선택하는법 */
@@ -120,8 +122,8 @@
 
 .headerWrap .searchForm button i {
   font-size: 15px;
-  color: #fff;
-  background: #333;
+  color: #96f;
+  background: #ddd;
   padding: 5px;
   border-radius: 50%;
 }
@@ -306,6 +308,7 @@
 .mainProduct {
   padding: 100px 0;
   text-align: center;
+  background: #fff;
 }
 
 .mainProduct h2 {
@@ -313,6 +316,7 @@
   font-weight: 100;
   letter-spacing: 0.2em;
   margin-bottom: 10px;
+  color: #666;
 }
 
 .mainProduct p {
@@ -320,6 +324,7 @@
   font-weight: 100;
   letter-spacing: -0.025em;
   margin-bottom: 30px;
+  color: #666;
 }
 
 .mainProduct .container {
@@ -333,6 +338,8 @@
   flex: 1;
   /* 사이를 벌려주는 것 */
   padding: 0 15px;
+  border: 1px solid #96f;
+  border-radius: 20px;
 }
 
 .mainProduct .container figure .inner {
@@ -343,18 +350,19 @@
   /* 꽉 채워서 inline 이 옆에 올 수 없다. */
   display: block;
   margin-bottom: 10px;
+  color: #666;
 }
 
 .mainProduct .container figure a {
   display: inline-block;
   padding: 10px 30px;
-  background: #333;
-  color: #fff;
+  background: #fcf;
+  color: #96f;
 }
 
 .mainProduct .container figure a:hover {
-  background: #ddd;
-  color: #333;
+  background: #96f;
+  color: #fcf;
 }
 
 /* 박스 넘치는 것을 없애서 박스안에 가둬 둔다. */
@@ -440,7 +448,7 @@
 
 .eventProduct .eProductSlide {
   padding: 5px;
-  border: 10px solid #ddd;
+  border: 10px solid #96f;
   padding: 5px;
 }
 
@@ -530,7 +538,7 @@
 .allProduct .slick-dots li {
   width: 13px;
   height: 13px;
-  background: #333;
+  background: #fcf;
   border-radius: 50%;
 }
 
@@ -539,7 +547,7 @@
 }
 
 .allProduct .slick-dots li.slick-active {
-  background: #f00;
+  background: #96f;
   transition: 1s;
 }
 
@@ -552,7 +560,7 @@
 
   font-size: 30px;
   color: #fff;
-  background: #333;
+  background: #96f;
   border-radius: 50%;
   padding: 10px;
 }
@@ -568,7 +576,7 @@
 /* 2022.03.21 영상 배경화면 깔기 */
 .movieBg {
   padding: 300px 0;
-  color: #fff;
+  color: #333;
   text-align: center;
   filter: grayscale(1);
 }
@@ -592,7 +600,7 @@
 .movieBg i {
   font-size: 20px;
   padding: 10px;
-  background: #333;
+  background: #f2f2f2;
   border-radius: 50%;
   margin: 0 15px;
   padding: 15px;

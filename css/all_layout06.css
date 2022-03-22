@@ -4,6 +4,7 @@
   /* 섹션을 가를 때 연한 회색 배경을 준다  */
 
   color: #000;
+  background: #f0e5d8;
 }
 
 .topBanner .container {
@@ -122,8 +123,8 @@
 
 .headerWrap .searchForm button i {
   font-size: 15px;
-  color: #96f;
-  background: #ddd;
+  color: #666;
+  background: #fff;
   padding: 5px;
   border-radius: 50%;
 }
@@ -187,13 +188,13 @@
   left: 200px;
 
   z-index: 999;
-  border-top: 100px solid #fff;
+  border-top: 100px solid #333;
   border-right: 100px solid transparent;
   transform: translateY(-50%) rotate(-45deg);
 }
 
 .mainVisual .visualSlide .msLeft.oo {
-  border-top: 100px solid #333;
+  border-top: 100px solid #96f;
 }
 
 .mainVisual .visualSlide .msRight {
@@ -201,20 +202,20 @@
   top: 50%;
   right: 200px;
 
-  border-top: 100px solid #fff;
+  border-top: 100px solid #333;
   border-left: 100px solid transparent;
   transform: translateY(-50%) rotate(45deg);
 }
 
 .mainVisual .visualSlide .msRight.oo {
-  border-top: 100px solid #333;
+  border-top: 100px solid #96f;
 }
 
 .mainVisual .visualSlide figure .inner {
   width: 1200px;
   margin: 300px auto 0 auto;
   padding: 0 15px;
-  color: #fff;
+  color: #333;
 }
 
 .mainVisual .visualSlide figure.itm02 .inner {
@@ -228,7 +229,6 @@
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 30px;
-  text-shadow: 0 0 2px #333;
 }
 
 .mainVisual .visualSlide figure.slick-active .inner h3 {
@@ -241,8 +241,7 @@
   transform: translateY(100px);
   transition: 1s 1s;
   font-size: 15px;
-  font-weight: 300;
-  text-shadow: 0 0 2px #333;
+  font-weight: 500;
 }
 
 .mainVisual .visualSlide figure.slick-active .inner p {
@@ -289,7 +288,7 @@
   display: block;
   width: 0;
   height: 100%;
-  background: #f00;
+  background: #96f;
   transition: 3s;
 }
 
@@ -308,12 +307,12 @@
 .mainProduct {
   padding: 100px 0;
   text-align: center;
-  background: #fff;
+  background: #f0e5d8;
 }
 
 .mainProduct h2 {
   font-size: 19px;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 0.2em;
   margin-bottom: 10px;
   color: #666;
@@ -321,7 +320,7 @@
 
 .mainProduct p {
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: -0.025em;
   margin-bottom: 30px;
   color: #666;
@@ -408,14 +407,14 @@
 
 .eventBanner h2 {
   font-size: 19px;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 0.2em;
   margin-bottom: 10px;
 }
 
 .eventBanner p {
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: -0.025em;
   margin-bottom: 30px;
 }
@@ -460,7 +459,7 @@
 
 .eventProduct h3 {
   font-size: 19px;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 0.2em;
   margin-bottom: 10px;
 }
@@ -484,12 +483,12 @@
   position: relative;
   padding: 100px 0;
   text-align: center;
-  background: #fff;
+  background: #f0e5d8;
 }
 
 .allProduct h2 {
   font-size: 19px;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 0.2em;
   margin-bottom: 10px;
 }
@@ -583,7 +582,7 @@
 
 .movieBg h2 {
   font-size: 19px;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 0.2em;
   margin-bottom: 10px;
   text-shadow: 0 0 2px #333;

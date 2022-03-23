@@ -130,7 +130,7 @@
 }
 
 .mainVisual .visualSlide {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #96f;
 }
 
 .mainVisual .visualSlide figure {
@@ -609,7 +609,7 @@
   /* 위아래 공간 같게 하기 */
   padding: 100px 0;
   /* 백그라운드는 강약을 준다. */
-  background: #f2f2f2;
+  background: #f0e5d8;
 }
 
 .customerArea .container {

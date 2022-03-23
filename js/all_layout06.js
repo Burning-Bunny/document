@@ -129,5 +129,26 @@ $(function () {
     $(this).parent().hide();
   });
 
+  //2022.03.23  toTop 버튼 작동
+  $(".toTop").on("click", function (e) {
+    e.preventDefault();
+    $("html,body").animate({ scrollTop: 0 }, 500);
+    // 속도는 400 이 기본
+    return false;
+  });
+
+  //버튼이 스크롤 하면 나타났다 탑으로 가면 사라지게 만드는 방법
+  $(window).on("scroll", function () {
+    //선언문 let
+    let sct = $(window).scrollTop();
+    console.log(sct);
+    //조건문 if
+    if (sct > 500) {
+      $(".toTop").fadeIn(1000);
+    } else {
+      $(".toTop").fadeOut(1000);
+    }
+  });
+
   ////////////////////////////////////////
 });

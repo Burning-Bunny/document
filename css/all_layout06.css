@@ -51,7 +51,10 @@
 }
 
 .headerWrap {
+  position: sticky;
+  top: 0;
   background: #96f;
+  z-index: 999;
 }
 /*  header : GIL 2022.03.17 최종수정  */
 
@@ -527,6 +530,8 @@
 }
 
 .allProduct .inner {
+  background: #f2f2f2;
+  border-radius: 50%;
   margin-bottom: 20px;
 }
 

@@ -256,14 +256,26 @@
 
 .mainVisual .visualSlide .itm01 {
   background: url(../img/change/taeyeon_slide_03.png) no-repeat top center/cover;
+  animation: myAnim 3s ease-in-out 1s infinite normal both;
 }
 
 .mainVisual .visualSlide .itm02 {
   background: url(../img/change/taeyeon_slide_04.png) no-repeat top center/cover;
+  animation: myAnim 3s ease-in-out 4s infinite normal both;
 }
 
 .mainVisual .visualSlide .itm03 {
   background: url(../img/change/taeyeon_slide_05.png) no-repeat top center/cover;
+  animation: myAnim 3s ease-in-out 7s infinite normal both;
+}
+@keyframes myAnim {
+  0% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 .mainVisual .visualSlide .slick-dots {

@@ -714,7 +714,7 @@
 /*  2022.03.22  footer 만들기 */
 
 .footerWrap {
-  background: #fcf;
+  background: #96f;
   color: #333;
   line-height: 60px;
 }
@@ -799,4 +799,25 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
+}
+
+/* 2022.03.23 맨위로 올라가는 버튼 */
+.toTop {
+  position: fixed;
+  /* 상우하좌 순서대로 */
+  inset: auto 50px 100px auto;
+  /* 1.처음엔 안보인다 
+  2.스크롤을 내리면 나타난다show(); 
+  3.스크롤을 올리면 없어진다. hide(); */
+  display: none;
+  background: transparent;
+  border: none;
+}
+
+.toTop i {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
 }

@@ -592,7 +592,7 @@
 /* 2022.03.21 영상 배경화면 깔기 */
 .movieBg {
   padding: 300px 0;
-  color: #333;
+  color: #fff;
   text-align: center;
   filter: grayscale(1);
 }
@@ -616,7 +616,8 @@
 .movieBg i {
   font-size: 20px;
   padding: 10px;
-  background: #f2f2f2;
+  background: #fff;
+  color: #333;
   border-radius: 50%;
   margin: 0 15px;
   padding: 15px;

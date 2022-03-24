@@ -34,7 +34,7 @@
         margin-bottom: 50px;
       }
       .subPage .hospitalContent span {
-        color: #0d6efd;
+        color: rgba(13, 110, 253, 1);
       }
       .subPage .hospitalContent .container {
         display: flex;
@@ -87,7 +87,7 @@
         padding: 30px 20px;        
         height: 100%;
         width: 100%;
-        background: rgba(0, 0, 0, 0.5);
+        background: linear-gradient(145deg,rgba(67,229,255,0.5) 0%, rgba(250,67,255,0.5) 100%);
         color: #fff;
         transition: 0.5s;
        }
@@ -111,13 +111,15 @@
        }
        .subPage .hospitalContent a {
          position: absolute;
-         top: 0;
-         right: 0;
+         bottom: 30px;
+         left: 50%;
+         transform: translate(-50%,-50%);
          display: inline-block;
          padding: 10px;
-         background: #0d6efd;
+         background: linear-gradient(145deg,rgba(67,229,255,1) 0%, rgba(250,67,255,1) 100%);
          color: #fff;
          border: 1px solid rgba(255, 255, 255, 0.5);
+         border-radius: 10px;
          text-align: center;
        }
        .subPage .hospitalContent .left {

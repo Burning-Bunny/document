@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기본으로 돌아가기</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+      #subPage .info__content {
+        padding: 100px 0;
+        letter-spacing: -0.025em;
+      }
+      #subPage .info__content h2 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+      }
+      #subPage .info__content h2::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: #333;
+        margin: 10px auto;
+      }
+      #subPage .info__content > p {
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        margin: 0 0 50px 0;
+      }
+      #subPage .info__content .fixed__bg {
+        background: url(../img/change/taeyeon_slide_04.png) no-repeat fixed
+          center 10% / cover;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+        margin: 0 0 100px 0;
+      }
+      #subPage .info__content .fixed__bg strong {
+        display: block;
+        font-family: "Nanum Myeongjo", serif;
+        font-size: 30px;
+        font-weight: 800;
+        margin: 0 0 10px 0;
+      }
+      #subPage .info__content .fixed__bg p {
+        font-size: 15px;
+        font-weight: 300;
+      }
+      #subPage .info__content .container {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto 100px auto;
+      }
+      #subPage .info__content .container figure {
+        padding: 0 15px;
+      }
+      #subPage .info__content .container .inner {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 20px 20px;
+        border-bottom: 5px solid #f00;
+      }
+      #subPage .info__content .container .inner:hover .txt {
+        top: calc(100% - 160px);
+      }
+      #subPage .info__content .container .txt {
+        position: absolute;
+        top: calc(100% - 60px);
+        left: 0;
+        background: rgba(0, 0, 0, 0.75);
+        color: #fff;
+        padding: 20px 15px;
+        height: 100%;
+        width: 100%;
+        transition: 0.5s;
+      }
+
+      #subPage .info__content .container strong {
+        font-size: 30px;
+        font-weight: 900;
+      }
+      #subPage .info__content .container strong::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        margin: 15px 0 15px 0;
+      }
+      #subPage .info__content .container figure:nth-child(1) strong {
+        color: #ff0800;
+      }
+      #subPage .info__content .container figure:nth-child(2) strong {
+        color: #f1f508;
+      }
+      #subPage .info__content .container figure:nth-child(3) strong {
+        color: #00f7ff;
+      }
+      #subPage .info__content .container figure:nth-child(4) strong {
+        color: #ea00ff;
+      }
+      #subPage .info__content .container figure:nth-child(1) .inner {
+        border-color: #ff0800;
+      }
+      #subPage .info__content .container figure:nth-child(2) .inner {
+        border-color: #f1f508;
+      }
+      #subPage .info__content .container figure:nth-child(3) .inner {
+        border-color: #00f7ff;
+      }
+      #subPage .info__content .container figure:nth-child(4) .inner {
+        border-color: #ee00ff;
+      }
+      #subPage .info__content .danger {
+        width: 1170px;
+        margin: 0 auto;
+        background: #f3f3f3;
+        padding: 30px 20px;
+      }
+      #subPage .info__content .danger strong {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 30px 0;
+      }
+      #subPage .info__content .danger i {
+        margin-right: 10px;
+      }
+      #subPage .info__content .danger p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.4;
+        margin: 0 0 30px 0;
+      }
+      #subPage .info__content .danger .list {
+        line-height: 1.6;
+      }
+      #subPage .info__content .danger .list li::before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: #f00;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin: 0 10px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Wrap">
+      <header>header</header>
+      <article id="subPage">
+        <section class="info__content">
+          <h2><span>Lorem</span> ipsum dolor sit.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+            deleniti. Reprehenderit, quidem?
+          </p>
+          <div class="fixed__bg">
+            <strong>
+              " Lorem ipsum dolor sit amet consectetur adipisicing. "
+            </strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              officia magni fugit doloribus labore.
+            </p>
+          </div>
+          <div class="container">
+            <figure>
+              <div class="inner">
+                <img
+                  src="../img/change/그라데이션 엔와이 트랙 세트1.png"
+                  alt=""
+                />
+                <div class="txt">
+                  <strong>01</strong>
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+              </div>
+            </figure>
+            <figure>
+              <div class="inner">
+                <img
+                  src="../img/change/그라데이션 엔와이 트랙 세트2.png"
+                  alt=""
+                />
+                <div class="txt">
+                  <strong>02</strong>
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+              </div>
+            </figure>
+            <figure>
+              <div class="inner">
+                <img
+                  src="../img/change/DNA 모노그램 수채화 트랙 세트2.png"
+                  alt=""
+                />
+                <div class="txt">
+                  <strong>03</strong>
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+              </div>
+            </figure>
+            <figure>
+              <div class="inner">
+                <img
+                  src="../img/change/그라데이션 엔와이 트랙 세트3.png"
+                  alt=""
+                />
+                <div class="txt">
+                  <strong>04</strong>
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <div class="danger">
+            <strong>
+              <i class="xi-tags"></i> Lorem ipsum dolor sit amet.
+            </strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              saepe accusantium quaerat eum, quis, cumque dicta ab temporibus
+              quos vitae rem! Deserunt corporis iure unde. Sunt libero provident
+              doloribus expedita.
+            </p>
+            <ul class="list">
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur cum ullam impedit.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur cum ullam impedit.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur cum ullam impedit.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur cum ullam impedit.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur cum ullam impedit.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur cum ullam impedit.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur cum ullam impedit.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+      <footer>&copy; GIL.</footer>
+    </div>
+  </body>
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script>
+    $(function () {});
+  </script>
+</html>
